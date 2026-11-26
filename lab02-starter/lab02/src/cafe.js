@@ -24,6 +24,7 @@ export function availableItems(menu) {
 // findItem(menu, "F01") → { id: "F01", name: "Khao Soi", ... }
 export function findItem(menu, id) {
   // TODO
+  return menu.find((item) => item.id === id);
 }
  
 // Task 4 — filter + map
@@ -31,6 +32,7 @@ export function findItem(menu, id) {
 // availableIn(menu, "dessert") → ["Mango Sticky Rice", "Coconut Ice Cream"]
 export function availableIn(menu, category) {
   // TODO
+  return menu.filter((item) => item.category === category && item.available).map((item) => item.name);
 }
 
 // Task 5 — template literal + destructuring
@@ -40,6 +42,7 @@ export function availableIn(menu, category) {
 // Hint: start with  const { name, price, available } = item;
 export function menuLine(item) {
   // TODO
+  
 }
 
 // Task 6 — spread
