@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Name** | _your full name_ |
-| **Nickname** | _your nickname_ |
-| **Student ID** | _6xxxxxxxx_ |
+| **Name** | _Myat Phone Han_ |
+| **Nickname** | _Justin_ |
+| **Student ID** | _692115508_ |
 | **Section** | 701 |
 
 ## How to run
@@ -19,11 +19,16 @@ npm start        # Part D — the daily report
 ## My own function (Part D)
 
 _Name of your function, what it returns, and which array methods it uses._
+Function Name - cheapDrinks
+It returns available drinks at or under maxPrice, cheapest first, as menu lines
+it uses .filter, .sort and .map
 
 ## What I learned today
 
 _Write 2–3 sentences in your own words: when would you use map, filter, find and reduce?_
+I would use them to filter my datasets, and get the specific data i want.
 
 ## AI-use statement
 
 _Did you use an AI tool in this lab? If yes, which one and for what. If no, write "No AI tools used."_
+Yes i used claude to explain the errors in cafe.js tasks i didn't understand

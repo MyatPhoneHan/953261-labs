@@ -13,7 +13,7 @@ export function menuNames(menu) {
 }
 
 // Task 2 — filter
-// Return only the items whose `available` is true.
+// Return only the items whose `available` is   true.
 export function availableItems(menu) {
   // TODO
   return menu.filter((item) => item.available);
@@ -90,4 +90,12 @@ export function bestSeller(orders, menu) {
 // { drink: ["Thai Iced Tea", ...], food: [...], dessert: [...] }
 export function namesByCategory(menu) {
   // TODO
+}
+
+// Part D -cheapDrinks(menu, maxPrice): available drinks at or under maxPrice, cheapest first, as menu lines
+export function cheapDrinks(menu, maxPrice) {
+  return menu
+    .filter((item) => item.category === "drink" && item.available && item.price <= maxPrice)
+    .sort((a, b) => a.price - b.price)
+    .map((item) => menuLine(item));
 }
