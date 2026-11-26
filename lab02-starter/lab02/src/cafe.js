@@ -42,7 +42,8 @@ export function availableIn(menu, category) {
 // Hint: start with  const { name, price, available } = item;
 export function menuLine(item) {
   // TODO
-  
+  const { name, price, available } = item;
+  return `${name} — ${price} THB${available ? "" : " (sold out)"}`;
 }
 
 // Task 6 — spread
@@ -51,6 +52,8 @@ export function menuLine(item) {
 // withDiscount({ ..., price: 45 }, 10) → { ..., price: 41 }   (45 × 0.9 = 40.5 → 41)
 export function withDiscount(item, percent) {
   // TODO
+  const discountedPrice = Math.round(item.price * (1 - percent / 100));
+  return { ...item, price: discountedPrice };
 }
 
 // Task 7 — reduce + find
